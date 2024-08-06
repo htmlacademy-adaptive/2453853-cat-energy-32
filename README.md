@@ -3,6 +3,7 @@
 * Студент: [Дмитрий Черкашин](https://up.htmlacademy.ru/adaptive/32/user/2453853).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 * Ссылка на репозиторий: (https://github.com/Dach1980/Cherkashin-cat-energy-32.git)
+* Ссылка на сайт: (https://dach1980.github.io/Cherkashin-cat-energy-32/).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
