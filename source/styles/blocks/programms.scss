@@ -1,0 +1,52 @@
+// .programms {
+
+
+// }
+
+// .programms__wrapper {
+
+
+// }
+
+// .programms__list {
+
+
+// }
+
+.programms__item {
+  list-style: none;
+}
+
+// .programms__item--slim {
+
+// }
+
+.programms__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--black-num1);
+}
+
+.programms__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--text-description);
+}
+
+.programms__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--black-num1);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+// .programms__item--pro {
+
+// }
