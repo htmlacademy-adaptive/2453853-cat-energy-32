@@ -17,16 +17,22 @@
   list-style: none;
 }
 
-// .programms__item--slim {
+.programms__item--slim {
+  background-image: url("../../icons/cat-slim.svg");
+  background-color: var(--bg-basic, #ff6347);
+}
 
-// }
+.programms__item--pro {
+  background-image: url("../../icons/cat-pro.svg");
+  background-color: var(--bg-basic, #ff6347);
+}
 
 .programms__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 .programms__description {
@@ -34,7 +40,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: var(--text-description);
+  color: var(--text-description, #ff6347);
 }
 
 .programms__link {
@@ -42,11 +48,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
   text-transform: uppercase;
   text-decoration: none;
 }
-
-// .programms__item--pro {
-
-// }
