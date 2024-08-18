@@ -11,7 +11,7 @@
   font-weight: 400;
   font-size: 60px;
   line-height: 60px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 .promo__slogan {
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 // .promo__image-wrapper {

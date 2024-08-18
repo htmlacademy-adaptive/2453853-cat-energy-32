@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: var(--text-description);
-  background-color: var(--bg-gray);
+  color: var(--text-description, #ff6347);
+  background-color: var(--bg-basic, #ff6347);
   border: none;
 }

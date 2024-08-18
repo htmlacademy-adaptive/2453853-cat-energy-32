@@ -15,7 +15,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--text-description);
+  color: var(--text-description, #ff6347);
 }
 
 // .example__list {
@@ -31,7 +31,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 37px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 .example__option {
@@ -39,7 +39,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: var(--text-description);
+  color: var(--text-description, #ff6347);
 }
 
 .example__total {
@@ -47,7 +47,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 .example__cost {
@@ -55,7 +55,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 // .example__image-slim-wrapper {
