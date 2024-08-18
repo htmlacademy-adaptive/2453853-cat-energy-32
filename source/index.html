@@ -16,12 +16,13 @@
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1200px)" srcset="images/logo/logo-desktop.svg" width="202" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logo/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="7" height="2" alt="Логотип Кэт энерджи">
+        <source media="(min-width: 1200px)" srcset="images/nav/logo-desktop.svg" width="202" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/nav/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
       </picture>
     </a>
-    <nav class="main-nav">
+
+    <nav class="main-nav main-nav--opened">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -37,6 +38,7 @@
         </li>
       </ul>
     </nav>
+
   </header>
 
   <main class="main-container">
@@ -157,7 +159,7 @@
       <div class="main-footer__logo">
         <a class="main-footer__link" href="index.html">
           <span class="visually-hidden">Логотип Кэт энерджи</span>
-          <svg width="128" height="24">
+          <svg class="main-footer__logo-icon" width="128" height="24">
             <use href="#logo-text"></use>
           </svg>
         </a>
@@ -167,7 +169,7 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg width="27" height="17">
+              <svg class="main-footer__logo-icon" width="27" height="17">
                 <use href="#icon-vk"></use>
               </svg>
             </a>
@@ -196,14 +198,6 @@
             <source media="(min-width: 768px)" width="168" height="37" type="image/svg+xml" srcset="images/footer/html-academy-tablet.svg">
             <img class="main-footer__copyright-image" src="images/footer/html-academy-mobile.svg" width="280" height="34" alt="Логотип Кэт энерджи">
           </picture>
-
-          <!-- <span class="visually-hidden">Логотип HTML Academy</span>
-          <svg width="113" height="20">
-            <use href="#icon-html-academy-text"></use>
-          </svg>
-          <svg width="27" height="34">
-            <use href="#icon-html-academy"></use>
-          </svg> -->
         </a>
       </div>
     </div>
