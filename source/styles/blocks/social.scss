@@ -1,13 +1,15 @@
-// .social {
+.social {
+  //
+}
 
-// }
-
-// .social__list {
-
-// }
+.social__list {
+  display: flex;
+  flex-direction: row;
+}
 
 .social__item {
   list-style: none;
+  padding: 12px;
 }
 
 // .social__link {
