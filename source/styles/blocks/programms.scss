@@ -8,16 +8,37 @@
 
 // }
 
-// .programms__list {
-
-
-// }
+.programms__list {
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
 
 .programms__item {
-  list-style: none;
+  // display: flex;
+  // flex-direction: column;
+  // list-style: none;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 20px;
+  }
+
+  @media (min-width: $mobile-width-only) {
+    width: 280px;
+    padding: 0;
+  }
 }
 
 .programms__item--slim {
+  display: block;
   background-image: url("../../icons/cat-slim.svg");
 
   @media (min-width: $desktop-width) {
@@ -43,6 +64,7 @@
 }
 
 .programms__item--pro {
+  display: block;
   background-image: url("../../icons/cat-pro.svg");
 
   @media (min-width: $desktop-width) {

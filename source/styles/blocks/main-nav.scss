@@ -1,15 +1,22 @@
-// .main-nav {
-
-
-// }
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
 // .main-nav__toggle {
 
 // }
 
-// .main-nav__list {
-
-// }
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
 
 // .main-nav__list--close {
 

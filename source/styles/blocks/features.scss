@@ -10,13 +10,17 @@
 
 // }
 
-// .features__list {
-
-
-// }
+.features__list {
+  display: flex;
+  column-gap: 94px;
+}
 
 .features__item {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  max-width: 230px;
+  row-gap: 31px;
 }
 
 .features__description {
@@ -36,9 +40,26 @@
 // }
 
 .features__item--leaf {
-  background-image: url("../../icons/icon-leaf.svg");
+  position: absolute;
   background-color: var(--bg-basic, #ff6347);
+  width: 80px;
+  height: 80px;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 40px;
+    right: 40px;
+    width: 25px;
+    height: 28px;
+    background-image: url("../../icons/icon-leaf.svg");
+    // background-size: 25px 28px;
+    background-repeat: no-repeat;
+    // transform: translateY(-50%);
+  }
 }
+
 
 .features__item--powder {
   background-image: url("../../icons/icon-powder.svg");
