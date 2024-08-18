@@ -2,9 +2,13 @@
 
 // }
 
-// .subscribe__title {
-
-// }
+.subscribe__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--black, #ff6347);
+}
 
 // .subscribe__form {
 
@@ -39,4 +43,6 @@
   color: var(--white, #ff6347);
   background-color: var(--bg-basic, #ff6347);
   border: none;
+  padding: 15px 70px;
+  cursor: pointer;
 }

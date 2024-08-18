@@ -3,9 +3,7 @@
 // }
 
 .features__wrapper {
-  // display: flex;
-  // flex-direction: column;
-  // margin-bottom: 69px;
+  //
 }
 
 // .features__title {
@@ -16,6 +14,7 @@
   display: flex;
   column-gap: 94px;
   margin-bottom: 50px;
+  counter-reset: list;  /* Инициируем счетчик */
 }
 
 .features__item {
@@ -23,7 +22,19 @@
   flex-direction: column;
   list-style: none;
   width: 230px;
-  // row-gap: 31px;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    counter-increment: list; /* Увеличиваем значение счетчика */
+    content: counter(list) " "; /* Выводим число */
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: var(--gray-light, #ff6347);
+    transform: translate(58%, -13%);
+  }
 }
 
 .features__description {
@@ -32,15 +43,8 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--text-description, #ff6347);
+  z-index: 1;
 }
-
-// .features__number {
-//   font-family: "Oswald", sans-serif;
-//   font-weight: 400;
-//   font-size: 280px;
-//   line-height: 280px;
-//   color: var(--bg-gray);
-// }
 
 .features__leaf {
   position: relative;

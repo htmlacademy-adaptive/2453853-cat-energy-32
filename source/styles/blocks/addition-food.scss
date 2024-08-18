@@ -2,7 +2,7 @@
 
 // }
 
-.addition-food__title {
+.addition-food__name {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -23,9 +23,13 @@
   list-style: none;
 }
 
-// .addition-food__title {
-
-// }
+.addition-food__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--black, #ff6347);
+}
 
 .addition-food__description {
   font-family: "Lato", sans-serif;
@@ -43,9 +47,18 @@
   color: var(--text-description, #ff6347);
 }
 
-// .addition-food__button {
-
-// }
+.addition-food__button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 244px;
+  color: var(--white, #ff6347);
+  background-color: var(--bg-basic, #ff6347);
+  border: none;
+  padding: 10px 91px;
+  cursor: pointer;
+}
 
 .addition-food__gift {
   //
