@@ -3,7 +3,10 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: var(--white);
-  background-color: var(--bg-green);
+  color: var(--white, #ff6347);
+  background-color: var(--bg-basic, #ff6347);
+  width: 244px;
   border: none;
+  padding: 14px 26px;
+  cursor: pointer;
 }

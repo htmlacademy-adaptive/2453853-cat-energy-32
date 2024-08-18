@@ -8,25 +8,89 @@
 
 // }
 
-// .programms__list {
-
-
-// }
-
-.programms__item {
+.programms__list {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
   list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-// .programms__item--slim {
+.programms__item {
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // list-style: none;
 
-// }
+  // @media (min-width: $desktop-width) {
+  //   width: 570px;
+  //   padding: 33px;
+  // }
+
+  // @media (min-width: $tablet-width) {
+  //   width: 708px;
+  //   padding: 20px;
+  // }
+
+  // @media (min-width: $mobile-width-only) {
+  //   width: 280px;
+  //   padding: 0;
+  // }
+}
+
+.programms__item--slim {
+  display: absolute;
+  background-image: url("../../icons/cat-slim.svg");
+
+  @media (min-width: $desktop-width) {
+    background-size: 70px 97px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: 140px 194px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+
+  @media (min-width: $mobile-width-only) {
+    background-size: 36px 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+}
+
+.programms__item--pro {
+  display: absolute;
+  background-image: url("../../icons/cat-pro.svg");
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 56px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 112px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+
+  @media (min-width: $mobile-width-only) {
+    background-size: 67px 28px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+  }
+}
 
 .programms__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
 }
 
 .programms__description {
@@ -34,19 +98,28 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: var(--text-description);
+  color: var(--text-description, #ff6347);
 }
 
 .programms__link {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: var(--black-num1);
+  color: var(--gray-darken, #ff6347);
   text-transform: uppercase;
   text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: -50%;
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/icon-arrow-right.svg");
+    transform: translate(0, -50%);
+  }
 }
-
-// .programms__item--pro {
-
-// }

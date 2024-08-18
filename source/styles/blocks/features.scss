@@ -2,51 +2,119 @@
 
 // }
 
-// .features__wrapper {
-
-// }
+.features__wrapper {
+  // display: flex;
+  // flex-direction: column;
+  // margin-bottom: 69px;
+}
 
 // .features__title {
 
 // }
 
-// .features__list {
-
-
-// }
-
-.features__item {
-  list-style: none;
+.features__list {
+  display: flex;
+  column-gap: 94px;
+  margin-bottom: 50px;
 }
 
-// .features__item--leaf {
-
-// }
+.features__item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 230px;
+  // row-gap: 31px;
+}
 
 .features__description {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--text-description);
+  color: var(--text-description, #ff6347);
 }
 
-.features__number {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 280px;
-  line-height: 280px;
-  color: var(--bg-gray);
+// .features__number {
+//   font-family: "Oswald", sans-serif;
+//   font-weight: 400;
+//   font-size: 280px;
+//   line-height: 280px;
+//   color: var(--bg-gray);
+// }
+
+.features__leaf {
+  position: relative;
+  background-color: var(--bg-basic, #ff6347);
+  width: 80px;
+  height: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    width: 25px;
+    height: 28px;
+    background-image: url("../../icons/icon-leaf.svg");
+    transform: translate(50%, -50%);
+  }
 }
 
-// .features__item--powder {
 
-// }
+.features__powder {
+  position: relative;
+  background-color: var(--bg-basic, #ff6347);
+  width: 80px;
+  height: 80px;
 
-// .features__item--food {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    width: 25px;
+    height: 28px;
+    background-image: url("../../icons/icon-powder.svg");
+    transform: translate(50%, -50%);
+  }
+}
 
-// }
+.features__eat {
+  position: relative;
+  background-color: var(--bg-basic, #ff6347);
+  width: 80px;
+  height: 80px;
 
-// .features__item--scales {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    width: 25px;
+    height: 28px;
+    background-image: url("../../icons/icon-eat.svg");
+    transform: translate(50%, -50%);
+  }
+}
 
-// }
+.features__clock {
+  position: relative;
+  background-color: var(--bg-basic, #ff6347);
+  width: 80px;
+  height: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    width: 25px;
+    height: 28px;
+    background-image: url("../../icons/icon-clock.svg");
+    transform: translate(50%, -50%);
+  }
+}

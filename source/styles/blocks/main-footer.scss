@@ -1,22 +1,25 @@
-// .main-footer {
+.main-footer {
+  //
+}
 
-// }
-
-// .main-footer__wrapper {
-
-// }
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // .main-footer__logo {
 
 
 // }
 
-// .main-footer__link {
+// .main-footer__logo-icon {
 
 // }
 
-// .main-footer__image {
-
+// .main-footer__link {
+//   background-image: url("../../icons/logo-text.svg");
 // }
 
 // .main-footer__social {
@@ -28,9 +31,5 @@
 // }
 
 // .main-footer__copyright-link {
-
-// }
-
-// .main-footer__copyrigh-image {
-
+//   background-image: url("../../icons/icon-html-academy-text.svg"), url("../../icons/icon-html-academy.svg");
 // }

@@ -1,27 +1,21 @@
-// .social {
+.social {
+  //
+}
 
-// }
+.social__list {
+  display: flex;
+  flex-direction: row;
+}
 
-// .social__list {
-
-// }
-
-// .social__item {
-
-// }
+.social__item {
+  list-style: none;
+  padding: 12px;
+}
 
 // .social__link {
 
 // }
 
-// .social__link--vkontakte {
-
-// }
-
-// .social__link--youtube {
-
-// }
-
-// .social__link--telegram {
-
-// }
+.social__icon {
+  //
+}

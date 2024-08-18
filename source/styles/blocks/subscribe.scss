@@ -27,7 +27,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: var(--text-description);
+  color: var(--text-description, #ff6347);
   text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: var(--white);
-  background-color: var(--bg-green);
+  color: var(--white, #ff6347);
+  background-color: var(--bg-basic, #ff6347);
   border: none;
 }
