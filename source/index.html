@@ -23,33 +23,21 @@
     </a>
 
     <nav class="main-nav main-nav--opened">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="images/nav/logo-desktop.svg" width="202" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/nav/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      </picture>
-      </a>
-
-      <nav class="main-nav main-nav--opened">
-        <ul class="main-nav__list main-nav__list--close">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </nav>
-
+      <ul class="main-nav__list main-nav__list--close">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
   </header>
 
   <main class="main-container">
@@ -93,7 +81,6 @@
         <h2 class="features__title">Как это работает</h2>
         <ol class="features__list">
           <li class="features__item">
-            <div class="features__leaf"></div>
             <ol class="features__list">
               <li class="features__item">
                 <div class="features__leaf"></div>
@@ -101,20 +88,14 @@
               </li>
               <li class="features__item">
                 <div class="features__powder"></div>
-              <li class="features__item">
-                <div class="features__powder"></div>
                 <p class="features__description">Выпускается в виде порошка, который нужно лишь залить
                   кипятком и готово.</p>
               </li>
               <li class="features__item">
                 <div class="features__eat"></div>
-              <li class="features__item">
-                <div class="features__eat"></div>
                 <p class="features__description">Замените один-два приема обычной еды на наше
                   функциональное питание.</p>
               </li>
-              <li class="features__item">
-                <div class="features__clock"></div>
               <li class="features__item">
                 <div class="features__clock"></div>
                 <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!.</p>
@@ -182,17 +163,6 @@
           <picture>
             <img class="main-footer__logo-icon" src="images/footer/logo-text.svg" width="128" height="24" alt="Логотип Кэт энерджи">
           </picture>
-          <!-- <span class="visually-hidden">Логотип Кэт энерджи</span>
-          <svg class="main-footer__logo-icon" width="128" height="24">
-            <use href="#logo-text"></use>
-          </svg> -->
-          <picture>
-            <img class="main-footer__logo-icon" src="images/footer/logo-text.svg" width="128" height="24" alt="Логотип Кэт энерджи">
-          </picture>
-          <!-- <span class="visually-hidden">Логотип Кэт энерджи</span>
-          <svg class="main-footer__logo-icon" width="128" height="24">
-            <use href="#logo-text"></use>
-          </svg> -->
         </a>
       </div>
       <div class="main-footer__social social">
@@ -202,17 +172,6 @@
               <picture>
                 <img class="social__icon" src="images/footer/icon-vk.svg" width="27" height="17" alt="Мы в Вконтакте">
               </picture>
-              <!-- <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="main-footer__logo-icon" width="27" height="17">
-                <use href="#icon-vk"></use>
-              </svg> -->
-              <picture>
-                <img class="social__icon" src="images/footer/icon-vk.svg" width="27" height="17" alt="Мы в Вконтакте">
-              </picture>
-              <!-- <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="main-footer__logo-icon" width="27" height="17">
-                <use href="#icon-vk"></use>
-              </svg> -->
             </a>
           </li>
           <li class="social__item">
@@ -220,17 +179,6 @@
               <picture>
                 <img class="social__icon" src="images/footer/icon-youtube.svg" width="24" height="19" alt="Мы в Ютубе">
               </picture>
-              <!-- <span class="visually-hidden">Мы в Ютубе</span>
-              <svg width="24" height="19">
-                <use href="#icon-youtube"></use>
-              </svg> -->
-              <picture>
-                <img class="social__icon" src="images/footer/icon-youtube.svg" width="24" height="19" alt="Мы в Ютубе">
-              </picture>
-              <!-- <span class="visually-hidden">Мы в Ютубе</span>
-              <svg width="24" height="19">
-                <use href="#icon-youtube"></use>
-              </svg> -->
             </a>
           </li>
           <li class="social__item">
@@ -238,20 +186,12 @@
               <picture>
                 <img class="social__icon" src="images/footer/icon-telegramm.svg" width="20" height="17" alt="Мы в Телеграме">
               </picture>
-              <!-- <span class="visually-hidden">Мы в Телеграме</span>
-              <svg width="20" height="17">
-                <use href="#icon-telegramm"></use>
-              </svg> -->
             </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <picture>
-            <source media="(min-width: 768px)" width="168" height="37" type="image/svg+xml" srcset="images/footer/html-academy-tablet.svg">
-            <img class="main-footer__copyright-image" src="images/footer/html-academy-mobile.svg" width="280" height="34" alt="Логотип Кэт энерджи">
-          </picture>
           <picture>
             <source media="(min-width: 768px)" width="168" height="37" type="image/svg+xml" srcset="images/footer/html-academy-tablet.svg">
             <img class="main-footer__copyright-image" src="images/footer/html-academy-mobile.svg" width="280" height="34" alt="Логотип Кэт энерджи">
