@@ -51,7 +51,7 @@
 
 // }
 
-.addition-food__gift--icon {
+.addition-food__icon {
   background-image: url("../../icons/icon-gift.svg");
   background-color: var(--bg-basic, #ff6347);
 
@@ -60,11 +60,13 @@
     background-repeat: no-repeat;
     background-position: 50% 25%;
   }
+
   @media (min-width: $tablet-width) {
     background-size: 80px 83px;
     background-repeat: no-repeat;
     background-position: 50% 25%;
   }
+
   @media (min-width: $desktop-width) {
     background-size: 80px 83px;
     background-repeat: no-repeat;

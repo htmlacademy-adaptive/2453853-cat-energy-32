@@ -42,7 +42,7 @@
 //   color: var(--bg-gray);
 // }
 
-.features__item--leaf {
+.features__leaf {
   position: relative;
   background-color: var(--bg-basic, #ff6347);
   width: 80px;
@@ -62,7 +62,7 @@
 }
 
 
-.features__item--powder {
+.features__powder {
   position: relative;
   background-color: var(--bg-basic, #ff6347);
   width: 80px;
@@ -81,7 +81,7 @@
   }
 }
 
-.features__item--eat {
+.features__eat {
   position: relative;
   background-color: var(--bg-basic, #ff6347);
   width: 80px;
@@ -100,7 +100,7 @@
   }
 }
 
-.features__item--clock {
+.features__clock {
   position: relative;
   background-color: var(--bg-basic, #ff6347);
   width: 80px;
