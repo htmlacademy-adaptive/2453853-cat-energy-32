@@ -1,8 +1,5 @@
 .button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  @include secondary-font (20px, 26px); // $font-size, $line-height
   width: 244px;
   color: var(--white, #ff6347);
   background-color: var(--bg-basic, #ff6347);

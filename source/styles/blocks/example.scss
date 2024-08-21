@@ -11,10 +11,7 @@
 // }
 
 .example__description {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  @include primary-font (16px, 24px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
 }
 
@@ -27,34 +24,22 @@
 // }
 
 .example__number {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 37px;
+  @include secondary-font (30px, 37px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
 }
 
 .example__option {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include primary-font (14px, 1); // $font-size, $line-height
   color: var(--text-description, #ff6347);
 }
 
 .example__total {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  @include secondary-font (20px, 1); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
 }
 
 .example__cost {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  @include secondary-font (20px, 1); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
 }
 

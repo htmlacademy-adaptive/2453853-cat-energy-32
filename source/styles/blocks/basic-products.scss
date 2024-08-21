@@ -11,10 +11,7 @@
 // }
 
 .basic-products__button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include secondary-font (16px, 20px); // $font-size, $line-height
   color: var(--white, #ff6347);
   background-color: var(--bg-basic, #ff6347);
   width: 244px;

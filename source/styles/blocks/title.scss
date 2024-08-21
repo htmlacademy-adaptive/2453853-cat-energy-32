@@ -1,7 +1,7 @@
 .title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font-family;
   font-weight: 400;
   font-size: 60px;
-  line-height: 60px;
+  line-height: 1; // 60px
   color: var(--gray-darken, #ff6347);
 }

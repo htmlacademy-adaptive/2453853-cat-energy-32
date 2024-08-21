@@ -1,14 +1,27 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--gray-darken, #ff6347);
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+body {
+  @include primary-font (16px, 18px); // $font-size, $line-height
+  color: var(--gray-darken, #ff6347);
+  background-color: var(--white, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: $desktop-width;
+  }
 }
