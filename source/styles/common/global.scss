@@ -5,23 +5,22 @@
   box-sizing: border-box;
 }
 
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
+img {
+  object-fit: cover;
+}
 
 body {
+  margin: 0;
+
   @include primary-font (16px, 18px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
   background-color: var(--white, #ff6347);
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
     width: $desktop-width;
   }
 }

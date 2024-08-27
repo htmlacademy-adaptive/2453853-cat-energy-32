@@ -22,8 +22,8 @@
       </picture>
     </a>
 
-    <nav class="main-nav main-nav--opened">
-      <ul class="main-nav__list main-nav__list--close">
+    <nav class="main-nav main-nav--closed">
+      <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
         </li>
@@ -44,7 +44,7 @@
   <main class="main-container">
     <section class="promo">
       <div class="promo__wrapper">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <h1 class="promo__title">Функциональное <br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <div class="promo__image-wrapper">
           <picture>
@@ -97,7 +97,7 @@
           </li>
           <li class="features__item">
             <div class="features__clock"></div>
-            <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!.</p>
+            <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ol>
       </div>
@@ -105,7 +105,7 @@
 
     <section class="example">
       <div class="example__wrapper container">
-        <h2 class="example__title title">Живой пример</h2>
+        <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
           обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="example__list">
@@ -113,33 +113,35 @@
             <dt class="example__number">5 кг</dt>
             <dd class="example__option">Cнижение веса</dd>
           </dl>
-        </div>
-        <dl class="example__list">
-          <div class="example__item">
+          <dl class="example__item">
             <dt class="example__number">60 дней</dt>
             <dd class="example__option">Затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="example__total">Затраты на питание: <span class="example__cost">15 000 руб.</span></p>
+          </dl>
+          <p class="example__total">Затраты на питание: <span class="example__cost">15 000 руб.</span></p>
+        </div>
       </div>
-      <p class="example__image-slim-wrapper">
-        <picture>
-          <source media="(min-width: 768px)" width="560" height="512" type="image/jpg" srcset="images/slim-cat-tablet.jpg 1x, images/slim-cat-tablet@2x.jpg 2x">
-          <img class="example__slim" src="images/slim-cat-phone.jpg" width="280" height="256" srcset="images/slim-cat-phone@2x.jpg 2x" alt="Худой кот">
-        </picture>
-      </p>
-      <p class="example__image-fat-wrapper">
-        <picture>
-          <source media="(min-width: 768px)" width="560" height="512" type="image/jpg" srcset="images/fat-cat-tablet.jpg 1x, images/fat-cat-tablet@2x.jpg 2x">
-          <img class="example__fat" src="images/fat-cat-phone.jpg" width="280" height="256" srcset="images/fat-cat-phone@2x.jpg 2x" alt="Худой кот">
-        </picture>
-      </p>
+      <div class="example__image-wrapper">
+        <div class="example__image-fat-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/fat-cat-desktop@1x.png 1x, images/fat-cat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
+            <img class="example__fat" src="images/fat-cat-mobile@1x.png" width="280" height="256" srcset="images/fat-cat-mobile@2x.png 2x" alt="Худой кот">
+          </picture>
+        </div>
+        <div class="example__image-slim-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/slim-cat-desktop@1x.png 1x, images/slim-cat-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
+            <img class="example__slim" src="images/slim-cat-mobile@1x.png" width="280" height="256" srcset="images/slim-cat-mobile@2x.png 2x" alt="Худой кот">
+          </picture>
+        </div>
+      </div>
     </section>
 
     <section class="contacts">
       <div class="contacts__wrapper container">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__title">Приглашаем сотрудничеству дилеров!</p>
+        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span> </address>
       </div>
       <div class="contacts__map">
@@ -189,6 +191,7 @@
     </div>
   </footer>
 
+  <script src="index.js"></script>
 </body>
 
 </html>

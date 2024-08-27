@@ -1,31 +1,98 @@
-// .contacts {
+.contacts {
+  width: $mobile-width;
+  margin: 0;
+  padding-top: 26px;
 
-// }
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 
-// .contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
 
-// }
+.contacts__wrapper {
+  margin: 0 20px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 140px 140px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
+}
 
 .contacts__title {
-  @include secondary-font (20px, 26px); // $font-size, $line-height
+  @include secondary-font (16px, 20px); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font (20px, 26px); // $font-size, $line-height
+    width: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include secondary-font (20px, 26px); // $font-size, $line-height
+  }
 }
 
 .contacts__address {
-  @include primary-font (16px, 20px); // $font-size, $line-height
+  @include primary-font (14px, 20px); // $font-size, $line-height
   font-style: normal;
   color: var(--text-description, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include primary-font (16px, 20px); // $font-size, $line-height
+    width: 165px;
+    text-align: right;
+    // margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (16px, 20px); // $font-size, $line-height
+  }
 }
 
 // .contacts__city {
 
+//   @media (min-width: $tablet-width) {
+//    padding-top: 20px;
+//   }
 // }
 
-// .contacts__map {
+.contacts__map {
+  margin: 0;
+  padding: 0;
+}
 
-// }
+.contacts__image-wrapper {
+  margin: 0;
+  padding: 0;
+}
 
-// .contacts__image-wrapper {
+.contacts__image {
+  margin: 0;
+  padding: 0;
 
-// }
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}

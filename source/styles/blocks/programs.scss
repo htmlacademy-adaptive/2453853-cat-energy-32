@@ -1,11 +1,12 @@
 .programs {
   background-color: var(--white, #ff6347);
+  margin: 0 20px;
 }
 
 .programs__wrapper {
   display: flex;
-  width: 280px;
-  row-gap: 20px;
+  width: $mobile-content;
+  // row-gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,8 +16,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-
-    width: 1220px;
+    width: $desktop-width;
     justify-content: center;
   }
 }
@@ -26,6 +26,8 @@
   flex-direction: column;
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -41,13 +43,13 @@
 
 .programs__item {
   position: relative;
-  padding: 0;
+  padding: 0 20px;
   width: 280px;
   background-color: var(--gray-light, #ff6347);
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 0 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,15 +59,20 @@
 }
 
 .programs__title {
-  @include secondary-font (36px, 1); // $font-size, $line-height
+  @include secondary-font (24px, 37px); // $font-size, $line-height
   display: flex;
   position: relative;
   text-transform: uppercase;
   color: var(--gray-darken, #ff6347);
-  padding-left: 68px;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    @include secondary-font (36px, 1); // $font-size, $line-height
+    padding: 0;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,7 +87,7 @@
   background-repeat: no-repeat;
   width: 36px;
   height: 50px;
-  top: -3px;
+  top: 20px;
   left: 7px;
 
   @media (min-width: $tablet-width) {
@@ -104,7 +111,7 @@
   height: 50px;
   background-color: var(--bg-basic, #ff6347);
   border-radius: 50%;
-  top: 0;
+  top: 20px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -127,8 +134,8 @@
   background-image: url("../../icons/cat-pro.svg");
   background-repeat: no-repeat;
   width: 67px;
-  height: 28px;
-  top: 10px;
+  height: 26px;
+  top: 35px;
   left: -8px;
 
   @media (min-width: $tablet-width) {
@@ -152,7 +159,7 @@
   height: 50px;
   background-color: var(--bg-basic, #ff6347);
   border-radius: 50%;
-  top: 0;
+  top: 22px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -170,8 +177,21 @@
 }
 
 .programs__description {
-  @include primary-font (16px, 1); // $font-size, $line-height
+  @include primary-font (14px, 18px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
+  margin: 0;
+  padding-right: 33px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--program-border, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include primary-font (16px, 1); // $font-size, $line-height
+    border: none;
+  }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
 
 .programs__link {
@@ -182,6 +202,13 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 57px;
+  }
 
   &::after {
     content: "";
