@@ -1,52 +1,80 @@
 .promo {
-  width: $mobile-width;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  text-align: center;
   background-image:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 60%),
     image-set(
       url("../../images/hero-cat-mobile@2x.png") 2x,
       url("../../images/hero-cat-mobile.png") 1x
-    );
+    ),
+    linear-gradient(90deg, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-color: #3b7d1d;
+  background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    // display: grid;
+    // display: flex;
+    display: block;
     background-image: none;
-    padding-top: 65px;
-    padding-left: 120px;
+    // padding-top: 65px;
+    // padding-left: 120px;
+    background-color: var(--white, #ff6347);
   }
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    display: block;
-    background-image:
-      linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
-      image-set(
-        url("../../images/hero-cat-desktop@2x.png") 2x,
-        url("../../images/hero-cat-desktop.png") 1x
-      );
-    background-size: 720px 694px;
-    background-position: 100% 0;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: $desktop-width;
+  //   display: block;
+  //   background-image:
+  //     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%),
+  //     image-set(
+  //       url("../../images/hero-cat-desktop@2x.png") 2x,
+  //       url("../../images/hero-cat-desktop.png") 1x
+  //     );
+  //   background-size: 720px 694px;
+  //   background-position: 100% 0;
+  // }
 }
 
 .promo__wrapper {
+  grid-column: 2 / 3;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 200px;
-  //   height: 200px;
-  //   top: -40px;
-  //   left: 400px;
-  // }
+  @media (min-width: $tablet-width) {
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: 90px auto;
+    width: 610px;
+    // row-gap: 40px;
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    width: 610px;
-    row-gap: 40px;
+    // width: 600px;
+    grid-template-columns: 80px 1fr 179px 432px;
+    grid-template-rows: 187px 49px 94px 215px;
+    padding: 0 110px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      z-index: 0;
+      background-color: #3b7d1d;
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85) 50% 50%),
+        image-set(
+          url("../../images/hero-cat-desktop@2x.png") 2x,
+          url("../../images/hero-cat-desktop.png") 1x
+        );
+      background-position: 100% 0;
+      background-repeat: no-repeat;
+      background-size: 720px 694px;
+      width: 720px;
+      height: 694px;
+      inset: -169px 0 0 720px; //top,right,bottom,left.
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
+    grid-column: 2 / -1;
     text-align: left;
     color: var(--black, #ff6347);
     background-color: var(--white, #ff6347);
@@ -81,24 +110,50 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
+    grid-column: 2 / -1;
     color: var(--gray-darken, #ff6347);
     text-align: left;
   }
 }
 
-// .promo__image-wrapper {
-//   grid-column: 2 / 3;
+.promo__image-wrapper {
+  @media (min-width: $desktop-width) {
+    z-index: 5;
+    grid-column: 2 / 5;
+    width: 552px;
+    // margin: 0;
+    position: relative;
+    bottom: 330px;
+    left: 367px;
+  }
+}
+
+
+// .promo__image {
+//   @media (min-width: $desktop-width) {
+//     grid-column: 3 / -1;
+//     grid-row: 1 / -1;
+//   }
 // }
 
 .promo__link {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  margin: 0 20px;
   text-transform: uppercase;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 40px;
+    grid-column: 2 / -1;
+    height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 40px;
+    grid-column: 2 / -1;
+    grid-row: 3 / 4;
   }
 }

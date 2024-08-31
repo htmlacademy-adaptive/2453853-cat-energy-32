@@ -40,16 +40,18 @@
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 90px 94px;
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 280px 280px;
+    gap: 77px 153px;
     counter-reset: list;  /* Инициируем счетчик */
     margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    grid-template-columns: repeat(4, 246px);
+    grid-template-rows: 280px;
+    gap: 70px 94px;
   }
 }
 
@@ -57,22 +59,24 @@
   display: flex;
   column-gap: 24px;
   list-style: none;
-  // width: 200px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    width: 230px;
-    z-index: 2;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 80px 35px 134px;
+    grid-template-rows: 80px 103px 55px;
 
     &::before {
+      display: block;
+
       @include secondary-font (280px, 1); // $font-size, $line-height
-      position: absolute;
+      // position: absolute;
       counter-increment: list; /* Увеличиваем значение счетчика */
       content: counter(list) " "; /* Выводим число */
       color: var(--gray-light, #ff6347);
-      transform: translate(58%, -13%);
+      transform: translate(3%, -16%);
+      grid-column: 3 / -1;
+      grid-row: 1 / -1;
     }
   }
 }
@@ -91,6 +95,8 @@
     color: var(--text-description, #ff6347);
     z-index: 1;
     padding-top: 32px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
   }
 }
 
@@ -99,6 +105,12 @@
   background-color: var(--bg-basic, #ff6347);
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
 
   &::before {
     content: "";
@@ -138,6 +150,11 @@
   width: 60px;
   height: 60px;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -176,6 +193,11 @@
   width: 60px;
   height: 60px;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -213,6 +235,11 @@
   background-color: var(--bg-basic, #ff6347);
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 
   &::before {
     content: "";

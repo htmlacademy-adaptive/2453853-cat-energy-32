@@ -1,20 +1,7 @@
-.social__list {
+.social__item {
   margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
-
-
-  // @media (min-width: $tablet-width) {
-
-  // }
-
-  // @media (min-width: $desktop-width) {
-
-  // }
-}
-
-.social__item {
   list-style: none;
   padding: 12px;
 
@@ -40,6 +27,15 @@
     width: var(--width);
     height: var(--height);
     background-color: var(--social-icon, #ff6347);
+  }
+
+  &:hover::before {
+    background-color: var(--bg-basic, #ff6347);
+  }
+
+  &:active::before {
+    opacity: 0.3;
+    background-color: var(--bg-basic, #ff6347);
   }
 }
 
