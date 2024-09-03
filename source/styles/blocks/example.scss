@@ -6,13 +6,11 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    // width: $tablet-width;
     display: block;
     background-image: linear-gradient(to bottom, #ffffff 55%, #eaeaea 55%);
   }
 
   @media (min-width: $desktop-width) {
-    // grid-template-columns: 110px 1fr 110px;
     background-image: linear-gradient(to bottom, #ffffff 27%, #eaeaea 27%);
   }
 }
@@ -30,7 +28,6 @@
     grid-template-rows: 136px 166px 221px;
   }
 }
-
 
 .example__title {
   @include secondary-font (36px, 40px); // $font-size, $line-height
@@ -112,7 +109,6 @@
   padding: 14px;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
-
   text-align: center;
   text-transform: uppercase;
 
@@ -185,13 +181,17 @@
 
 .example__slider {
   padding: 0;
-  position: relative;
+  position: absolute;
   width: 4px;
+  height: 100%;
   background-color: var(--social-icon, #ff6347);
   border: none;
   border-radius: 2px;
-  left: -40%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 5;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -221,6 +221,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+
   }
 
   &:is(:hover, :focus, :focus-visible) {
@@ -272,6 +274,7 @@
   display: flex;
   flex-direction: row;
   z-index: 3;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     justify-content: center;

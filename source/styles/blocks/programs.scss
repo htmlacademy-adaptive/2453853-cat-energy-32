@@ -17,7 +17,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     width: $desktop-width;
-    justify-content: center;
+    justify-content: left;
+
   }
 }
 
@@ -193,10 +194,6 @@
     @include primary-font (16px, 1); // $font-size, $line-height
     border: none;
   }
-
-  // @media (min-width: $desktop-width) {
-
-  // }
 }
 
 .programs__link {

@@ -1,3 +1,19 @@
-// .main-container {
-//  margin: 0 auto;
-// }
+.main-container {
+  margin: 0 auto;
+}
+
+.main-container__title {
+  @include secondary-font (36px, 1); // $font-size, $line-height
+  color: var(--gray-darken, #ff6347);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font (60px, 1); // $font-size, $line-height
+    padding-left: 110px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include secondary-font (60px, 1); // $font-size, $line-height
+  }
+}

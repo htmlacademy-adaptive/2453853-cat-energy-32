@@ -2,14 +2,16 @@
   width: $mobile-width;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   position: relative;
-  padding: 0;
+  padding: 13px 0 15px 20px;
+
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     height: 100px;
-    // display: flex;
     flex-flow: row wrap;
     padding: 25px 34px 25px 30px;
     justify-content: space-between;
@@ -21,6 +23,12 @@
     width: $desktop-width;
     height: 169px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    height: 169px;
+    padding-left: 110px;
+  }
 }
 
 .main-header__logo {
@@ -28,7 +36,6 @@
   align-items: center;
   justify-content: flex-start;
   column-gap: 56px;
-  padding: 13px 0 15px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

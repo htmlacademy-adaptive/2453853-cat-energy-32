@@ -1,32 +1,119 @@
-// .subscribe {
+.subscribe {
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
 
-// }
-
-.subscribe__title {
-  @include secondary-font (40px, 1); // $font-size, $line-height
-  color: var(--black, #ff6347);
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
-// .subscribe__form {
+.subscribe__title {
+  @include secondary-font (24px, 1); // $font-size, $line-height
+  color: var(--black, #ff6347);
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 32px;
+  padding-right: 40px;
+  position: relative;
 
-// }
+  &::before {
+    content: "";
+    display: block;
+    background-color: var(--white, #ff6347);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-// .subscribe__form-text {
+  &::after {
+    content: "";
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%);
+    display: block;
+    height: 2px;
+    width: 100vw;
+    margin-left: calc((280px - 100vw) / 2);
+    margin-right: calc((280px - 100vw) / 2);
+    position: absolute;
+    z-index: -2;
+    top: 10px;
+  }
 
-// }
+  @media (min-width: $tablet-width) {
+    @include secondary-font (32px, 1); // $font-size, $line-height
+    margin-left: 2px;
+    margin-bottom: 66px;
 
-// .subscribe__form-text {
+    &::before {
+      margin-left: -40px;
+      padding-right: 40px;
+    }
 
-// }
+    &::after {
+      background-image: none;
+      background-color: var(--bg-basic, #ff6347);
+      margin-left: calc((627px - 100vw) / 2);
+      margin-right: calc((627px - 100vw) / 2);
+      top: 14px;
+    }
+  }
 
-// .subscribe__form-block {
+  @media (min-width: $desktop-width) {
+    @include secondary-font (40px, 1); // $font-size, $line-height
+    margin-left: 0;
+    margin-bottom: 72px;
 
-// }
+    &::after {
+      margin-left: calc((1220px - 100vw) / 2);
+      margin-right: calc((1220px - 100vw) / 2);
+      top: 18px;
+    }
+  }
+}
+
+.subscribe__form-title {
+  @include secondary-font (16px, 24px); // $font-size, $line-height;
+  color: var(--text-description, #ff6347);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 
 .subscribe__form-field {
   @include secondary-font (20px, 30px); // $font-size, $line-height;
   color: var(--text-description, #ff6347);
   text-transform: uppercase;
+  width: 100%;
+  outline: none;
+  border-radius: 0;
+  border: 1px solid var(--example-border, #ff6347);
+  padding: 12px;
+  height: 56px;
+  margin-bottom: 16px;
+
+  &:focus {
+    border: 2px solid var(--text-description, #ff6347);
+    padding: 11px;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+    padding: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 376px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe__form-button {
@@ -36,4 +123,26 @@
   border: none;
   padding: 15px 70px;
   cursor: pointer;
+  width: 100%;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}
+
+.subscribe__form {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+    margin-bottom: 104px;
+  }
 }
