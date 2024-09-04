@@ -5,8 +5,10 @@
   background-image:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 60%),
     image-set(
-      url("../../images/hero-cat-mobile@2x.png") 2x,
-      url("../../images/hero-cat-mobile.png") 1x
+      url("../../images/hero-cat-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/hero-cat-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/hero-cat-mobile@2x.jpg") type("image/jpg") 2x,
+      url("../../images/hero-cat-mobile@1x.jpg") type("image/ipg") 1x
     ),
     linear-gradient(90deg, #4f4e54 50%, #424147 50%);
   background-repeat: no-repeat;
@@ -14,7 +16,7 @@
   background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    // width: $tablet-width;
     display: block;
     background-image: none;
     background-color: var(--white, #ff6347);
@@ -27,11 +29,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 90px auto;
-    width: 610px;
+    // width: 610px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 80px 1fr 179px 432px;
+    grid-template-columns: 80px 414px 179px 432px;
     grid-template-rows: 187px 49px 94px 215px;
     padding: 0;
     position: relative;
@@ -45,13 +47,15 @@
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85) 50% 50%),
         image-set(
-          url("../../images/hero-cat-desktop@2x.png") 2x,
-          url("../../images/hero-cat-desktop.png") 1x
+          url("../../images/hero-cat-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/hero-cat-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/hero-cat-desktop@2x.jpg") type("image/jpg") 2x,
+          url("../../images/hero-cat-desktop@1x.jpg") type("image/jpg") 1x
         );
       background-position: 100% 0;
       background-repeat: no-repeat;
-      background-size: 720px 694px;
-      width: 720px;
+      background-size: 100% 694px;
+      // width: 720px;
       height: 694px;
       inset: -169px 0 0 610px; //top,right,bottom,left.
     }

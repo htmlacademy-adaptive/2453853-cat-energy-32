@@ -220,6 +220,15 @@
     padding: 10px 50px;
     width: 169px;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
 }
 
 .cards__button-show-all {
@@ -240,5 +249,14 @@
   @media (min-width: $desktop-width) {
     padding: 10px 35px;
     width: 169px;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #444444;
   }
 }

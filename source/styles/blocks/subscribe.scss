@@ -129,6 +129,15 @@
   @media (min-width: $tablet-width) {
     width: 256px;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
 }
 
 .subscribe__form {

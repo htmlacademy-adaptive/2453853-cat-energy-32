@@ -11,4 +11,13 @@
     @include secondary-font (20px, 26px); // $font-size, $line-height
     width: 244px;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
 }

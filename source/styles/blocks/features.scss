@@ -59,6 +59,19 @@
   display: flex;
   column-gap: 24px;
   list-style: none;
+  order: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: var(--size);
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -66,13 +79,21 @@
     grid-template-columns: 80px 35px 134px;
     grid-template-rows: 80px 103px 55px;
 
-    &::before {
-      display: block;
+    &::after {
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      // margin-bottom: 31px;
+    }
 
+    &::before {
       @include secondary-font (280px, 1); // $font-size, $line-height
       // position: absolute;
       counter-increment: list; /* Увеличиваем значение счетчика */
       content: counter(list) " "; /* Выводим число */
+      display: block;
       color: var(--gray-light, #ff6347);
       transform: translate(3%, -16%);
       grid-column: 3 / -1;
@@ -81,10 +102,32 @@
   }
 }
 
+.features__leaf {
+  --icon: url("../../icons/icon-leaf.svg");
+  --size: 30px 32px;
+  // --height: 17px;
+}
+
+.features__powder {
+  --icon: url("../../icons/icon-powder.svg");
+  --size: 25px 28px;
+}
+
+.features__eat {
+  --icon: url("../../icons/icon-eat.svg");
+  --size: 25px 28px;
+}
+
+.features__clock {
+  --icon: url("../../icons/icon-clock.svg");
+  --size: 25px 28px;
+}
+
 .features__description {
   margin: 0;
   width: 200px;
   padding-top: 2px;
+  order: 2;
 
   @include primary-font (14px, 18px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
@@ -97,177 +140,5 @@
     padding-top: 32px;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-  }
-}
-
-.features__leaf {
-  position: relative;
-  background-color: var(--bg-basic, #ff6347);
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 50%;
-    width: 25px;
-    height: 28px;
-    background-image: url("../../icons/icon-leaf.svg");
-    transform: translate(50%, -50%);
-  }
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    background-color: var(--bg-basic, #ff6347);
-    width: 80px;
-    height: 80px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 50%;
-      right: 50%;
-      width: 25px;
-      height: 28px;
-      background-image: url("../../icons/icon-leaf.svg");
-      transform: translate(50%, -50%);
-    }
-  }
-}
-
-.features__powder {
-  position: relative;
-  background-color: var(--bg-basic, #ff6347);
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 50%;
-    width: 25px;
-    height: 28px;
-    background-image: url("../../icons/icon-powder.svg");
-    transform: translate(50%, -50%);
-  }
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    background-color: var(--bg-basic, #ff6347);
-    width: 80px;
-    height: 80px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 50%;
-      right: 50%;
-      width: 25px;
-      height: 28px;
-      background-image: url("../../icons/icon-powder.svg");
-      transform: translate(50%, -50%);
-    }
-  }
-}
-
-.features__eat {
-  position: relative;
-  background-color: var(--bg-basic, #ff6347);
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 50%;
-    width: 25px;
-    height: 28px;
-    background-image: url("../../icons/icon-eat.svg");
-    transform: translate(50%, -50%);
-  }
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    background-color: var(--bg-basic, #ff6347);
-    width: 80px;
-    height: 80px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 50%;
-      right: 50%;
-      width: 25px;
-      height: 28px;
-      background-image: url("../../icons/icon-eat.svg");
-      transform: translate(50%, -50%);
-    }
-  }
-}
-
-.features__clock {
-  position: relative;
-  background-color: var(--bg-basic, #ff6347);
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 50%;
-    width: 25px;
-    height: 28px;
-    background-image: url("../../icons/icon-clock.svg");
-    transform: translate(50%, -50%);
-  }
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    background-color: var(--bg-basic, #ff6347);
-    width: 80px;
-    height: 80px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 50%;
-      right: 50%;
-      width: 25px;
-      height: 28px;
-      background-image: url("../../icons/icon-clock.svg");
-      transform: translate(50%, -50%);
-    }
   }
 }

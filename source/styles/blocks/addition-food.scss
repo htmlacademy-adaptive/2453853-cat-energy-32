@@ -218,6 +218,15 @@
     width: 244px;
     margin-left: auto;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
 }
 
 .addition-food__gift {
