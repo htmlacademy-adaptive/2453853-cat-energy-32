@@ -1,6 +1,11 @@
 .programs {
   background-color: var(--white, #ff6347);
   margin: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 30px;
+    margin-bottom: 28px;
+  }
 }
 
 .programs__wrapper {
@@ -54,7 +59,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 70px 61px 55px 52px;
+    padding: 75px 46px 55px 52px;
   }
 }
 
@@ -77,7 +82,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
-    padding-bottom: 73px;
+    padding-bottom: 68px;
   }
 }
 
@@ -89,7 +94,7 @@
   width: 36px;
   height: 50px;
   top: 20px;
-  left: 7px;
+  left: 6px;
 
   @media (min-width: $tablet-width) {
     width: 140px;
@@ -101,7 +106,7 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    top: -30px;
+    top: -36px;
     left: 16px;
   }
 }
@@ -113,7 +118,7 @@
   height: 50px;
   background-color: var(--bg-basic, #ff6347);
   border-radius: 50%;
-  top: 20px;
+  top: 24px;
   left: 0;
 
   @media (min-width: $tablet-width) {
@@ -136,10 +141,10 @@
   position: absolute;
   background-image: url("../../icons/cat-pro.svg");
   background-repeat: no-repeat;
-  width: 67px;
-  height: 26px;
+  width: 69px;
+  height: 28px;
   top: 35px;
-  left: -8px;
+  left: -7px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -149,10 +154,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 134px;
-    height: 54px;
-    top: -7px;
-    left: -21px;
+    width: 138px;
+    height: 56px;
+    top: -9px;
+    left: -20px;
   }
 }
 
@@ -185,30 +190,39 @@
   @include primary-font (14px, 18px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
   margin: 0;
-  padding-right: 33px;
+  padding-right: 10px;
   padding-bottom: 23px;
   border-bottom: 1px solid var(--program-border, #ff6347);
 
   @media (min-width: $tablet-width) {
-    @include primary-font (16px, 1); // $font-size, $line-height
+    @include primary-font (16px, 24px); // $font-size, $line-height
     border: none;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (16px, 24px); // $font-size, $line-height
+    padding-top: 5px;
+    padding-bottom: 27px;
   }
 }
 
 .programs__link {
-  @include secondary-font (20px, 30px); // $font-size, $line-height
+  @include secondary-font (16px, 1); // $font-size, $line-height
   color: var(--gray-darken, #ff6347);
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 15px;
-  padding-top: 15px;
-  padding-bottom: 18px;
+  padding-top: 18px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
+    @include secondary-font (20px, 30px); // $font-size, $line-height
     padding: 0;
     padding-bottom: 57px;
+    gap: 27px;
   }
 
   @media (min-width: $desktop-width) {

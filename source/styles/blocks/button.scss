@@ -5,7 +5,7 @@
   width: $mobile-content;
   cursor: pointer;
   border: none;
-  padding: 14px 26px;
+
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 26px); // $font-size, $line-height

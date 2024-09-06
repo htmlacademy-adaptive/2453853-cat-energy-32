@@ -18,14 +18,17 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <a class="main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
         <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
         <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy" loading="lazy">
       </picture>
-      <img class="main-header__logo-text" width="101" height="18" src="images/nav/logo-text.svg" alt="Текстовый логотип Cat Energy" loading="lazy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/nav/logo-text.svg" type="image/svg+xml" width="118" height="21">
+        <img class="main-header__logo-text" width="101" height="18" src="images/nav/logo-text.svg" alt="Текстовый логотип Cat Energy" loading="lazy">
+      </picture>
     </a>
 
     <nav class="main-nav main-nav--index main-nav--closed">
@@ -148,7 +151,7 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span> </address>
       </div>
       <div class="contacts__map">

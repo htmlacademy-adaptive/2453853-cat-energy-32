@@ -6,6 +6,8 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding-top: 0;
+    background-color: var(--white, #ff6347);
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +26,7 @@
   grid-template-columns: 140px 140px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 60px 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -49,6 +51,7 @@
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 26px); // $font-size, $line-height
     width: 165px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

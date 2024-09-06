@@ -21,7 +21,7 @@
   grid-template-columns: 140px 140px;
   grid-template-rows: 107px 40px;
   row-gap: 17px;
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
   background-image: none;
 
   @media (min-width: $tablet-width) {
@@ -37,21 +37,20 @@
 
   &:first-child {
     @media (min-width: $tablet-width) {
-      border-top: 1px solid var(--catalog-border, #ff6347);
-    }
-
-    @media (min-width: $desktop-width) {
+      // border-top: 1px solid var(--catalog-border, #ff6347);
       border-top: none;
     }
+
+    // @media (min-width: $desktop-width) {
+    //   border-top: none;
+    // }
   }
-  // &:first-child {
-  //   border-top: none;
-  // }
 }
 
 .cards__item-more {
   list-style: none;
   padding: 25px 20px 24px;
+  border-bottom: 1px solid var(--catalog-border, #ff6347);
 
   @media (min-width: $tablet-width) {
     padding: 37px;
@@ -83,7 +82,7 @@
 .cards__link-more {
   display: block;
   text-align: center;
-  margin-bottom: 23px;
+  padding-bottom: 20px;
 }
 
 .cards__link-image-more {
@@ -107,7 +106,7 @@
   color: var(--gray-dark, #ff6347);
   text-transform: uppercase;
   padding-right: 60px;
-  margin-bottom: 14px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 24px); // $font-size, $line-height
@@ -115,7 +114,7 @@
     width: 135px;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 21px;
+    padding-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,9 +144,12 @@
 }
 
 .cards__description {
-  @include primary-font (12px, 16px); // $font-size, $line-height
+  @include primary-font (12px, 8px); // $font-size, $line-height
   color: var(--text-description, #ff6347);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
@@ -210,6 +212,7 @@
   cursor: pointer;
   grid-column: 1 / -1;
   grid-row: 2 / -1;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding: 10px 30px;
@@ -239,6 +242,7 @@
   padding: 10px 90px;
   width: 280px;
   cursor: pointer;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (16px, 20px); // $font-size, $line-height

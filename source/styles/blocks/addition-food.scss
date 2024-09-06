@@ -2,10 +2,17 @@
   width: $mobile-width;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     display: block;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,12 +41,12 @@
   color: var(--gray-dark, #ff6347);
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
     text-align: center;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,14 +60,16 @@
 .addition-food__list {
   padding: 0;
   margin: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
     width: 896px;
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -167,9 +176,11 @@
 }
 
 .addition-food__info {
+  margin: 0;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 223px;
@@ -190,8 +201,16 @@
 }
 
 .addition-food__description {
-  @include primary-font (16px, 20px); // $font-size, $line-height
+  @include primary-font (14px, 1); // $font-size, $line-height
   color: var(--text-description, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    @include primary-font (16px, 20px); // $font-size, $line-height
+  }
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (16px, 20px); // $font-size, $line-height
+  }
 }
 
 .addition-food__price {

@@ -1,4 +1,6 @@
 .subscribe {
+  width: $mobile-width;
+
   @media (min-width: $tablet-width) {
     width: 632px;
   }
