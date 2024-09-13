@@ -1,27 +1,30 @@
 .features {
-  width: $mobile-width;
-
-
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     margin: 0;
     border-bottom: 1px solid var(--nav-border, #ff6347);
   }
+  // @media (min-width: $desktop-width) {
 
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
+  // }
 }
 
 .features__wrapper {
-  margin: 0 20px;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  // margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    width: $tablet-width;
+    padding: 0 30px;
+    // margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 30px;
+    margin: 0 auto;
+    width: $desktop-width;
+    padding: 0 110px;
+    // margin: 0 30px;
   }
 }
 
@@ -34,7 +37,7 @@
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
     margin: 0;
-    padding-top: 27px;
+    padding-top: 25px;
     padding-bottom: 72px;
   }
 
@@ -71,7 +74,7 @@
 
 .features__item {
   display: flex;
-  column-gap: 24px;
+  column-gap: 20px;
   list-style: none;
   order: 1;
 
@@ -118,23 +121,23 @@
 
 .features__leaf {
   --icon: url("../../icons/icon-leaf.svg");
-  --size: 30px 32px;
+  --size: 31px 30px;
   // --height: 17px;
 }
 
 .features__powder {
   --icon: url("../../icons/icon-powder.svg");
-  --size: 25px 28px;
+  --size: 26px 28px;
 }
 
 .features__eat {
   --icon: url("../../icons/icon-eat.svg");
-  --size: 25px 28px;
+  --size: 26px 28px;
 }
 
 .features__clock {
   --icon: url("../../icons/icon-clock.svg");
-  --size: 25px 28px;
+  --size: 26px 28px;
 }
 
 .features__description {
@@ -164,5 +167,23 @@
     padding-top: 32px;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+  }
+
+  @media (min-width: $mobile-width) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
   }
 }

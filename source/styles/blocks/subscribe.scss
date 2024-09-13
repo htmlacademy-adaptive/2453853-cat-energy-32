@@ -1,5 +1,5 @@
 .subscribe {
-  width: $mobile-width;
+  width: calc($mobile-width - 40px);
 
   @media (min-width: $tablet-width) {
     width: 632px;
@@ -16,63 +16,35 @@
   display: inline-block;
   margin: 0;
   margin-bottom: 32px;
-  padding-right: 40px;
   position: relative;
+  width: fit-content;
+  background-color: var(--white, #ff6347);
+  box-shadow: -40px 0 0 var(--white, #ff6347), 40px 0 0 var(--white, #ff6347);
 
   &::before {
     content: "";
-    display: block;
-    background-color: var(--white, #ff6347);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
     position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  &::after {
-    content: "";
-    background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%);
-    display: block;
-    height: 2px;
     width: 100vw;
-    margin-left: calc((280px - 100vw) / 2);
-    margin-right: calc((280px - 100vw) / 2);
-    position: absolute;
-    z-index: -2;
-    top: 10px;
+    height: 2px;
+    background-color: var(--bg-basic, #ff6347);
+    box-shadow: 100vw 0 0 var(--bg-basic, #ff6347);
+    right: 100%;
+    top: 50%;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
     @include secondary-font (32px, 1); // $font-size, $line-height
     margin-left: 2px;
     margin-bottom: 66px;
-
-    &::before {
-      margin-left: -40px;
-      padding-right: 40px;
-    }
-
-    &::after {
-      background-image: none;
-      background-color: var(--bg-basic, #ff6347);
-      margin-left: calc((627px - 100vw) / 2);
-      margin-right: calc((627px - 100vw) / 2);
-      top: 14px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     @include secondary-font (40px, 1); // $font-size, $line-height
+    position: relative;
     margin-left: 0;
     margin-bottom: 72px;
-
-    &::after {
-      margin-left: calc((1220px - 100vw) / 2);
-      margin-right: calc((1220px - 100vw) / 2);
-      top: 18px;
-    }
+    color: var(--black, #fa8072);
   }
 }
 

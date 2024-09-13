@@ -1,63 +1,26 @@
 .main-header {
-  width: $mobile-width;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
   padding: 13px 0 11px 20px;
 
-
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    // width: $tablet-width;
     height: 100px;
     flex-flow: row wrap;
-    padding: 25px 34px 25px 30px;
+    padding: 27px 3px 24px 0;
     justify-content: space-between;
-    // outline: 5px solid rgba(255, 0, 0, 0.8);
-    // outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    padding: 52px 34px 25px 30px;
+    padding: 52px 0 25px;
     height: 169px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     height: 144px;
-  }
-}
-
-.main-header--index {
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 0;
-      background-color: #3b7d1d;
-      background-image:
-        linear-gradient(rgba(104, 183, 56, 0.85) 50% 50%),
-        image-set(
-          url("../../images/hero-cat-desktop@2x.webp") type("image/webp") 2x,
-          url("../../images/hero-cat-desktop@1x.webp") type("image/webp") 1x,
-          url("../../images/hero-cat-desktop@2x.jpg") type("image/jpg") 2x,
-          url("../../images/hero-cat-desktop@1x.jpg") type("image/jpg") 1x
-        );
-      background-position: 100% 0;
-      background-repeat: no-repeat;
-      background-size: 100% 694px;
-      width: 1042px;
-      height: 694px;
-      top: 0;
-      left: 639px;
-    }
   }
 }
 
@@ -70,8 +33,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     height: 50px;
-    // outline: 5px solid rgba(255, 255, 0, 0.8);
-    // outline-offset: -5px;
     gap: 13px;
   }
 
@@ -85,5 +46,17 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.main-header__logo-text {
+  margin-top: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 537px;
   }
 }

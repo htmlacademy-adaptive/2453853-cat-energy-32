@@ -16,7 +16,7 @@
   background-position: 50% 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    // margin: 0 30px;
     display: block;
     background-image: none;
     background-color: var(--white, #ff6347);
@@ -34,13 +34,16 @@
   grid-column: 2 / 3;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 708px;
     display: grid;
     grid-template-columns: 90px auto;
     grid-template-rows: 200px 40px 612px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 80px 414px 179px 432px;
+    width: 100%;
+    grid-template-columns: 1fr 80px 1140px 1fr;
     grid-template-rows: 241px 71px 54px 183px;
     padding: 0;
     padding-bottom: 85px;
@@ -67,7 +70,7 @@
 
   @media (min-width: $desktop-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
-    grid-column: 2 / -1;
+    grid-column: 3 / -2;
     text-align: left;
     color: var(--black, #ff6347);
     background-color: var(--white, #ff6347);
@@ -90,6 +93,10 @@
     color: var(--gray-darken, #ff6347);
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -2;
+  }
 }
 
 .promo__image-wrapper {
@@ -99,8 +106,8 @@
     width: 552px;
     // margin: 0;
     position: relative;
-    bottom: 368px;
-    left: 367px;
+    bottom: 367px;
+    left: 446px;
   }
 }
 
@@ -122,7 +129,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    grid-column: 2 / -1;
+    grid-column: 3 / -2;
     grid-row: 3 / 4;
   }
 }

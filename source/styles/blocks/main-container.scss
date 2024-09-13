@@ -1,5 +1,6 @@
 .main-container {
   margin: 0 auto;
+  flex-grow: 1;
 }
 
 .main-container__title {
@@ -16,7 +17,10 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
-    padding-left: 110px;
+    // padding-left: 110px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 84px;
     text-align: left;
     width: 100%;
     border-top: none;
@@ -24,6 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include secondary-font (60px, 1); // $font-size, $line-height
+    padding-top: 43px;
+    padding-bottom: 88px;
   }
 }

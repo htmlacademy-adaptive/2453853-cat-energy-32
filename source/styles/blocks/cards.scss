@@ -2,14 +2,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
-    margin-bottom: 74px;
+    gap: 59px 60px;
+    margin-bottom: 70px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 63px 80px;
+    gap: 65px 80px;
     margin-bottom: 71px;
   }
 }
@@ -21,7 +21,7 @@
   grid-template-columns: 140px 140px;
   grid-template-rows: 107px 40px;
   row-gap: 17px;
-  padding: 20px 20px 24px;
+  padding: 23px 20px 21px;
   background-image: none;
 
   @media (min-width: $tablet-width) {
@@ -57,7 +57,11 @@
     padding-top: 50px;
     padding-bottom: 38px;
     border: 2px solid #f2f2f2;
-    margin-top: auto;
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 78px;
   }
 }
 
@@ -75,14 +79,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 }
 
 .cards__link-more {
   display: block;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 36px;
+  }
 }
 
 .cards__link-image-more {
@@ -92,6 +104,7 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+    padding: 0;
   }
 }
 
@@ -118,7 +131,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 0;
+    padding-bottom: 24px;
   }
 }
 
@@ -156,6 +170,13 @@
     display: block;
     margin-bottom: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 33px;
+  }
 }
 
 .cards__item-description-more {
@@ -184,6 +205,11 @@
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid var(--example-border, #ff6347);
     padding-bottom: 4px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 
   &:not(:first-child) {
