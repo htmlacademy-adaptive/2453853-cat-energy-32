@@ -28,7 +28,8 @@
     width: $tablet-width;
     padding: 62px 70px 58px;
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
   }
 
@@ -87,11 +88,10 @@
   border: none;
   display: block;
   width: 100%;
-  // width: 320px;
   height: 362px;
 
   @media (min-width: $tablet-width) {
-    // width: 768px;
+
     height: 400px;
   }
 
@@ -99,7 +99,6 @@
     z-index: 1;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    // width: 1440px;
     height: 400px;
   }
 }

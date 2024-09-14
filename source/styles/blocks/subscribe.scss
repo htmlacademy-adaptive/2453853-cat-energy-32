@@ -70,7 +70,7 @@
   border-radius: 0;
   border: 1px solid var(--example-border, #ff6347);
   padding: 12px;
-  height: 56px;
+  // height: 56px;
   margin-bottom: 16px;
 
   &:focus {
@@ -102,6 +102,9 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
   }
 
   &:hover {

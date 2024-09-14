@@ -1,10 +1,13 @@
 .main-nav {
   margin-right: 0;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+
   @media (min-width: $desktop-width) {
     z-index: 3;
     width: 478px;
-    // margin-right: 142px;
   }
 }
 
@@ -45,16 +48,20 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
-    min-width: 437px;
+    flex-flow: row wrap;
+    // flex-direction: row;
+    // min-width: 437px;
     margin: 0;
     list-style: none;
-    justify-content: space-between;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 34px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    min-width: 478px;
+    min-width: 594px;
   }
 }
 
