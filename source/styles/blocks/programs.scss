@@ -16,14 +16,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 708px;
+    width: calc($tablet-width - 60px);
     row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    // padding: 0 110px;
     display: flex;
-    width: $desktop-width;
+    width: calc($desktop-width - 220px);
     justify-content: left;
   }
 }
@@ -56,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 77px 316px 0 52px;
+    padding: 75px 316px 0 52px;
   }
 
   @media (min-width: $desktop-width) {

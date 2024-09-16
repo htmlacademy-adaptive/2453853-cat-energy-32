@@ -48,16 +48,15 @@
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 1); // $font-size, $line-height
-    text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 0;
+    grid-area: title;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     margin-bottom: 0;
-    width: 225px;
-    margin-right: 100px;
-    text-align: left;
+    align-items: center;
   }
 }
 
@@ -89,19 +88,24 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #cdcdcd;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 38px;
+    display: grid;
+    padding: 39px;
     padding-top: 26px;
     padding-bottom: 27px;
-    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-template-areas: "title info"   "button button";
+    gap: 25px;
+    align-items: center;
 
     &:not(:first-child) {
       border-top: 0;
     }
 
     @media (min-width: $desktop-width) {
-      justify-content: left;
+      display: grid;
+      grid-template-columns: 285px 1fr 245px;
+      grid-template-areas: "title info button";
+      gap: 40px;
       align-items: center;
     }
   }
@@ -148,7 +152,7 @@
   @media (min-width: $desktop-width) {
     @include secondary-font (40px, 1); // $font-size, $line-height
     margin-left: 0;
-    margin-bottom: 78px;
+    margin-bottom: 81px;
   }
 }
 
@@ -160,14 +164,21 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 223px;
-    margin-bottom: 20px;
-    align-items: flex-end;
+    margin: 0;
+    display: grid;
+    grid-area: info;
+    grid-template-areas: "count price";
+    grid-template-columns: auto minmax(54px, auto);
+    justify-content: right;
+    gap: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-    width: 284px;
+    margin: 0;
+    display: grid;
+    grid-area: info;
+    grid-template-areas: "count price";
+    grid-template-columns: 1fr minmax(42px, auto);
     margin-top: 3px;
   }
 }
@@ -178,24 +189,28 @@
 
   @media (min-width: $tablet-width) {
     width: 187px;
+    padding-top: 4px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding-top: 50px;
   }
 }
 
-.addition-food__description {
+.addition-food__count {
   @include primary-font (14px, 1); // $font-size, $line-height
   color: var(--text-description, #ff6347);
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
+    grid-area: count;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
+    text-align: left;
   }
 }
 
@@ -206,10 +221,12 @@
 
   @media (min-width: $tablet-width) {
     @include primary-font (16px, 20px); // $font-size, $line-height
+    text-align: right;
+    grid-area: price;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -222,10 +239,11 @@
   padding: 10px 91px;
   text-transform: uppercase;
   cursor: pointer;
+  grid-area: button;
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin-left: auto;
+    grid-area: button;
   }
 
   &:hover {

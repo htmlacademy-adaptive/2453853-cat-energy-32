@@ -3,28 +3,27 @@
     margin: 0;
     border-bottom: 1px solid var(--nav-border, #ff6347);
   }
-  // @media (min-width: $desktop-width) {
 
-  // }
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .features__wrapper {
-  width: $mobile-width;
+  width: calc($mobile-width - 40px);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
+  // padding: 0 20px;
   // margin: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    padding: 0 30px;
-    // margin: 0 30px;
+    width: calc($tablet-width - 60px);
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    width: $desktop-width;
-    padding: 0 110px;
-    // margin: 0 30px;
+    width: calc($desktop-width - 220px);
+    // padding: 0 110px;
   }
 }
 
@@ -44,6 +43,7 @@
   @media (min-width: $desktop-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
     margin-bottom: 0;
+    padding-bottom: 75px;
   }
 }
 
@@ -66,9 +66,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 246px);
-    grid-template-rows: 280px;
+    grid-template-rows: auto;
     gap: 70px 78px;
-    margin-bottom: -17px;
+    margin-bottom: -23px;
   }
 }
 
@@ -94,7 +94,7 @@
     display: grid;
     gap: 0;
     grid-template-columns: 80px 30px 134px;
-    grid-template-rows: 80px 103px 55px;
+    grid-template-rows: 80px auto;
 
     &::after {
       width: 80px;
@@ -112,7 +112,7 @@
       content: counter(list) " "; /* Выводим число */
       display: block;
       color: var(--gray-light, #ff6347);
-      transform: translate(3%, -16%);
+      transform: translate(4%, -14%);
       grid-column: 3 / -1;
       grid-row: 1 / -1;
     }
@@ -164,7 +164,7 @@
     @include primary-font (16px, 24px); // $font-size, $line-height
     color: var(--text-description, #ff6347);
     z-index: 1;
-    padding-top: 32px;
+    padding-top: 30px;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
   }
