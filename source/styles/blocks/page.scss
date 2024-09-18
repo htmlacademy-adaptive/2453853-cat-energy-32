@@ -44,13 +44,4 @@
 
 .page__wrapper {
   margin: 0 auto;
-  width: $mobile-width;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: calc($desktop-width - 220px);
-  }
 }

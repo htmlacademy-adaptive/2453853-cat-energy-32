@@ -1,6 +1,5 @@
 .programs {
   background-color: var(--white, #ff6347);
-  // margin: 0 20px;
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -9,21 +8,13 @@
 }
 
 .programs__wrapper {
-
   display: flex;
-  width: $mobile-content;
-  // row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    width: calc($tablet-width - 60px);
     row-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    // padding: 0 110px;
-    display: flex;
-    width: calc($desktop-width - 220px);
     justify-content: left;
   }
 }
@@ -234,18 +225,17 @@
 
   &::after {
     content: "";
-    mask-image: url("../../icons/icon-arrow-right.svg");
-    width: 24px;
+    mask-image: url("../../icons/icon-arrow-right-big.svg");
+    min-width: 32px;
     height: 12px;
     mask-repeat: no-repeat;
     mask-size: contain;
     background-color: var(--black, #ff6347);
-    transition: transform 0.3s linear;
-    transform-origin: left center;
+    mask-position: -8px;
   }
 
   &:is(:hover, :focus, :focus-visible)::after {
-    transform: scaleX(1.35);
+    mask-position: 0;
   }
 
   &:is(:active)::after {

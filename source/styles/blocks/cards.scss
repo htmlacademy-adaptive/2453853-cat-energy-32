@@ -3,13 +3,13 @@
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 60px 60px;
-    margin-bottom: 72px;
+    margin-bottom: 69px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 63px 80px;
+    gap: 60px 80px;
     margin-bottom: 68px;
   }
 }
@@ -27,7 +27,6 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
     padding: 10px 37px 40px;
-    // display: block;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -46,10 +45,6 @@
       // border-top: 1px solid var(--catalog-border, #ff6347);
       border-top: none;
     }
-
-    // @media (min-width: $desktop-width) {
-    //   border-top: none;
-    // }
   }
 }
 
@@ -83,10 +78,6 @@
     // margin-bottom: 22px;
     height: 210px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-bottom: 10px;
-  // }
 }
 
 .cards__link-more {
@@ -139,10 +130,10 @@
     width: 135px;
     margin: 0 auto;
     padding: 12px 0 19px;
-    // padding-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 24px;
   }

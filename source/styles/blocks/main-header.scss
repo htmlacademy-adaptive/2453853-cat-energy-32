@@ -53,11 +53,3 @@
 .main-header__logo-image {
   display: block;
 }
-
-.main-header__logo-text {
-  margin-top: 6px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-  }
-}

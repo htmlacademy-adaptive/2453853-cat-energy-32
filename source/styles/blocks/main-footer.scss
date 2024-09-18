@@ -14,21 +14,15 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 708px;
     display: grid;
     grid-template-columns: 164px 1fr 164px;
     grid-template-rows: auto;
     gap: 16px;
     align-items: center;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
     padding: 45px 0 45px 2px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    // padding: 59px 0 55px;
     padding: 56px 0 58px;
   }
 }
@@ -36,7 +30,6 @@
 .main-footer__social {
   grid-row: 2 / 3;
   display: flex;
-  // flex-direction: row;
   flex-flow: row wrap;
   justify-content: center;
   margin: 0;
@@ -65,25 +58,22 @@
   justify-content: center;
   margin: 0 auto;
   display: block;
-  mask-image: url("../../icons/logo-text.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
   width: 128px;
   height: 24px;
-  background-color: var(--gray-darken, #ff6347);
+  color: var(--gray-darken, #ff6347);
 
-  &:hover {
-    background-color: var(--footer-logo-focus, #ff6347);
+  &:is(:hover, :focus, :focus-visible) {
+    opacity: 0.8;
+    color: var(--footer-logo-focus, #ff6347);
   }
 
   &:active {
     opacity: 0.3;
-    background-color: var(--footer-logo-focus, #ff6347);
+    color: var(--footer-logo-focus, #ff6347);
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    // padding-top: 20px;
     margin: 0;
     grid-column: 1 / 2;
     gap: 10px;
@@ -94,7 +84,7 @@
   @include primary-font (16px, 20px); // $font-size, $line-height
   font-size: 16px;
   line-height: 20px;
-  color: #444444;
+  color: var(--text-description, #ff6347);
   text-decoration: none;
   width: 100%;
   display: flex;
@@ -104,15 +94,15 @@
   gap: 10px;
 
   & .main-footer__developer-logo {
-    color: #666666;
+    color: var(--social-icon, #ff6347);
   }
 
   &:hover .main-footer__developer-logo {
-    color: #68b738;
+    color: var(--bg-basic, #ff6347);
   }
 
   &:active .main-footer__developer-logo {
-    color: #68b738;
+    color: var(--bg-basic, #ff6347);
     opacity: 0.3;
   }
 

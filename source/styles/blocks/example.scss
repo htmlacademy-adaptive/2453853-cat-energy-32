@@ -22,11 +22,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc($desktop-width - 220px);
     display: grid;
     grid-template-columns: 0 450px 205px 573px 0;
     grid-template-rows: min-content 166px 213px;

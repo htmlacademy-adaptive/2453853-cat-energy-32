@@ -1,3 +1,45 @@
 .container {
   margin: 0 auto;
+  width: $mobile-width;
+
+  & .promo__wrapper,
+  &.features__wrapper,
+  &.programs__wrapper,
+  &.example__wrapper,
+  &.contacts__wrapper {
+    width: calc($mobile-width - 40px);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: calc($tablet-width - 60px);
+
+    & .promo__wrapper,
+    &.features__wrapper,
+    &.programs__wrapper,
+    &.example__wrapper,
+    &.contacts__wrapper {
+      width: calc($tablet-width - 60px);
+    }
+
+    &.subscribe {
+      width: 632px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc($desktop-width - 220px);
+
+    & .promo__wrapper,
+    &.features__wrapper,
+    &.programs__wrapper,
+    &.example__wrapper,
+    &.subscribe {
+      width: calc($desktop-width - 220px);
+    }
+
+    &.contacts__wrapper {
+      // width: calc($mobile-width - 40px);
+      width: 566px;
+    }
+  }
 }

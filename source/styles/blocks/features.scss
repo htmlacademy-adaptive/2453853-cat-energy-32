@@ -10,21 +10,9 @@
 }
 
 .features__wrapper {
-  width: calc($mobile-width - 40px);
-  margin: 0 auto;
+  // width: calc($mobile-width - 40px);
+  // margin: 0 auto;
   padding: 0;
-  // padding: 0 20px;
-  // margin: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    width: calc($tablet-width - 60px);
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    width: calc($desktop-width - 220px);
-    // padding: 0 110px;
-  }
 }
 
 .features__title {
@@ -37,13 +25,13 @@
     @include secondary-font (60px, 1); // $font-size, $line-height
     margin: 0;
     padding-top: 25px;
-    padding-bottom: 72px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height
     margin-bottom: 0;
-    padding-bottom: 75px;
+    padding-bottom: 33px;
   }
 }
 
@@ -61,14 +49,14 @@
     grid-template-rows: 280px 280px;
     gap: 36px 153px;
     counter-reset: list;  /* Инициируем счетчик */
-    margin-bottom: 7px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 246px);
     grid-template-rows: auto;
     gap: 70px 78px;
-    margin-bottom: -23px;
+    margin-bottom: 24px;
   }
 }
 
@@ -92,28 +80,26 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    gap: 0;
-    grid-template-columns: 80px 30px 134px;
-    grid-template-rows: 80px auto;
+    gap: 0 29px;
+    grid-template-columns: 80px 136px;
+    grid-template-rows: 40px 80px auto;
 
     &::after {
       width: 80px;
       height: 80px;
       margin: 0;
       grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      // margin-bottom: 31px;
+      grid-row: 2 / 3;
     }
 
     &::before {
       @include secondary-font (280px, 1); // $font-size, $line-height
-      // position: absolute;
       counter-increment: list; /* Увеличиваем значение счетчика */
       content: counter(list) " "; /* Выводим число */
       display: block;
       color: var(--gray-light, #ff6347);
-      transform: translate(4%, -14%);
-      grid-column: 3 / -1;
+      transform: translate(4%, 0);
+      grid-column: 2 / -1;
       grid-row: 1 / -1;
     }
   }
@@ -157,7 +143,7 @@
     padding-top: 32px;
     width: 100%;
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
   }
 
   @media (min-width: $desktop-width) {
@@ -165,8 +151,8 @@
     color: var(--text-description, #ff6347);
     z-index: 1;
     padding-top: 30px;
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    // grid-column: 1 / -1;
+    // grid-row: 2 / 3;
   }
 
   @media (min-width: $mobile-width) {
@@ -177,13 +163,13 @@
 
   @media (min-width: $mobile-width-only) {
     br {
-      display: none;
+      display: initial;
     }
   }
 
   @media (min-width: $tablet-width) {
     br {
-      display: none;
+      display: initial;
     }
   }
 }
