@@ -16,9 +16,9 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body page__body--index">
+<body class="page__body page__body--index page__body--nojs">
   <div class="page__wrapper container">
-    <header class="main-header main-header--nojs" data-test="header">
+    <header class="main-header" data-test="header">
       <a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
@@ -51,8 +51,8 @@
   </div>
 
   <main class="main-container" data-test="main">
-    <section class="promo container" data-test="hero">
-      <div class="promo__wrapper">
+    <section class="promo" data-test="hero">
+      <div class="promo__wrapper container">
         <h1 class="promo__title">Функциональное <br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <div class="promo__image-wrapper">

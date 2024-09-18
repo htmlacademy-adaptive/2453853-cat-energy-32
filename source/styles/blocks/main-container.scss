@@ -11,8 +11,8 @@
   padding-left: 20px;
   padding-bottom: 39px;
   margin: 0 auto;
-  border-top: 1px solid var(--catalog-border, #ff6347);
-  border-bottom: 1px solid var(--catalog-border, #ff6347);
+  // border-top: 1px solid var(--catalog-border, #ff6347);
+  // border-bottom: 1px solid var(--catalog-border, #ff6347);
 
   @media (min-width: $tablet-width) {
     @include secondary-font (60px, 1); // $font-size, $line-height

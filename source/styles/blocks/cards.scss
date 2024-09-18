@@ -1,30 +1,45 @@
 .cards {
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px 60px;
-    margin-bottom: 69px;
+    gap: 62px 60px;
+    margin-bottom: 72px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 60px 80px;
+    gap: 62px 80px;
     margin-bottom: 68px;
   }
 }
 
 .cards__item {
   list-style: none;
-  border-bottom: 1px solid var(--catalog-border, #ff6347);
+  background-image: none;
+  border-top: 1px solid #ebebeb;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
+.cards__link-wrapper {
+  margin: 0 auto;
+  width: $mobile-width;
+  justify-content: center;
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 107px 40px;
   row-gap: 17px;
-  padding: 23px 20px 21px;
-  background-image: none;
+  padding: 21px 20px 23px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
     padding: 10px 37px 40px;
     display: flex;
@@ -39,7 +54,6 @@
     gap: 12px;
   }
 
-
   &:first-child {
     @media (min-width: $tablet-width) {
       // border-top: 1px solid var(--catalog-border, #ff6347);
@@ -50,8 +64,9 @@
 
 .cards__item-more {
   list-style: none;
-  padding: 25px 20px 24px;
+  padding: 23px 20px 24px;
   border-bottom: 1px solid var(--catalog-border, #ff6347);
+  border-top: 1px solid var(--catalog-border, #ff6347);
 
   @media (min-width: $tablet-width) {
     padding: 37px;
@@ -75,7 +90,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    // margin-bottom: 22px;
     height: 210px;
   }
 }
@@ -272,11 +286,15 @@
   width: 280px;
   cursor: pointer;
   text-transform: uppercase;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (16px, 20px); // $font-size, $line-height
     padding: 10px 75px;
     width: 250px;
+    display: initial;
   }
 
   @media (min-width: $desktop-width) {

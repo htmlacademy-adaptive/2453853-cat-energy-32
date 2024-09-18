@@ -1,9 +1,9 @@
 /* в этот файл добавляет скрипты*/
-const mainHeader = document.querySelector('.main-header');
+const body = document.querySelector('body');
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
-mainHeader.classList.remove('main-header--nojs');
+body.classList.remove('page__body--nojs');
 navMain.classList.remove('main-nav--opened');
 navMain.classList.add('main-nav--closed');
 

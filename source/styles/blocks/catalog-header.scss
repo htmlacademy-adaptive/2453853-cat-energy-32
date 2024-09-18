@@ -1,0 +1,7 @@
+.catalog-header {
+  border-bottom: 1px solid var(--catalog-border, #ff6347);
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}

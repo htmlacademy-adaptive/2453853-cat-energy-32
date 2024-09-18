@@ -14,20 +14,7 @@
 .main-nav__toggle {
   border: none;
   padding: 0;
-}
-
-.main-nav--closed .main-nav__toggle {
-  position: absolute;
-  top: 19;
-  right: 20;
-  z-index: 2;
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("../../icons/icon-burger.svg");
-  background-color: var(--white, #ff6347);
-  cursor: pointer;
-  border: none;
+  grid-column: 3 / 4;
 
   &:is(:hover, :focus, :focus-visible) {
     opacity: 0.8;
@@ -36,6 +23,20 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  top: 19px;
+  left: 5px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/icon-burger.svg");
+  background-color: var(--white, #ff6347);
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -97,6 +98,9 @@
   background-color: var(--white, #ff6347);
   cursor: pointer;
   border: none;
+  position: absolute;
+  top: 23px;
+  left: 5px;
 
   &:is(:hover, :focus, :focus-visible) {
     opacity: 0.8;
