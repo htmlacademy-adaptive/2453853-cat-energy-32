@@ -1,8 +1,14 @@
 .main-header {
   position: relative;
+<<<<<<< module10-task1
+  // display: grid;
+  // grid-template-columns: 1fr 250px 29px 1fr;
+  // align-items: center;
+=======
   display: grid;
   grid-template-columns: 1fr 250px 29px 1fr;
   align-items: center;
+>>>>>>> master
 
   @media (min-width: $tablet-width) {
     min-height: 100px;
@@ -28,8 +34,16 @@
   align-items: center;
   justify-content: flex-start;
   column-gap: 56px;
+<<<<<<< module10-task1
+  margin: 0 auto;
+  margin-right: calc(50vw - 108px);
+  width: 240px;
+  padding: 15px 0 12px;
+  // grid-column: 2 / 3;
+=======
   padding: 15px 0 12px;
   grid-column: 2 / 3;
+>>>>>>> master
 
   @media (min-width: $tablet-width) {
     width: 100%;
