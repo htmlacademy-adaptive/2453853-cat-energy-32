@@ -1,0 +1,122 @@
+.subscribe__title {
+  @include secondary-font (24px, 1); // $font-size, $line-height
+  color: var(--black, #ff6347);
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 32px;
+  position: relative;
+  width: fit-content;
+  background-color: var(--white, #ff6347);
+  box-shadow: -40px 0 0 var(--white, #ff6347), 40px 0 0 var(--white, #ff6347);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: var(--bg-basic, #ff6347);
+    box-shadow: 100vw 0 0 var(--bg-basic, #ff6347);
+    right: 100%;
+    top: 50%;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include secondary-font (32px, 1); // $font-size, $line-height
+    margin-left: 2px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include secondary-font (40px, 1); // $font-size, $line-height
+    position: relative;
+    margin-left: 0;
+    margin-bottom: 72px;
+    color: var(--black, #fa8072);
+  }
+}
+
+.subscribe__form-title {
+  @include secondary-font (16px, 24px); // $font-size, $line-height;
+  color: var(--text-description, #ff6347);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscribe__form-field {
+  @include secondary-font (20px, 30px); // $font-size, $line-height;
+  color: var(--text-description, #ff6347);
+  text-transform: uppercase;
+  width: 100%;
+  outline: none;
+  border-radius: 0;
+  border: 1px solid var(--example-border, #ff6347);
+  padding: 12px;
+  // height: 56px;
+  margin-bottom: 16px;
+
+  &:focus {
+    border: 2px solid var(--text-description, #ff6347);
+    padding: 11px;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+    padding: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 376px;
+    margin-bottom: 0;
+  }
+}
+
+.subscribe__form-button {
+  @include secondary-font (20px, 26px); // $font-size, $line-height
+  color: var(--white, #ff6347);
+  background-color: var(--bg-basic, #ff6347);
+  border: none;
+  padding: 15px 70px;
+  cursor: pointer;
+  width: 100%;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
+}
+
+.subscribe__form {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+    margin-bottom: 102px;
+  }
+}
