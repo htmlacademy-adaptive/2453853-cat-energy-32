@@ -211,6 +211,7 @@
   gap: 15px;
   padding-top: 18px;
   padding-bottom: 23px;
+  width: fit-content;
 
   @media (min-width: $tablet-width) {
     @include secondary-font (20px, 30px); // $font-size, $line-height
