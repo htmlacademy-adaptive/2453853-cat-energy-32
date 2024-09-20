@@ -8,12 +8,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     background-image: linear-gradient(to bottom, #ffffff 57%, #eaeaea 57%);
-    padding: 45px 0 100px;
+    padding: 45px 0 98px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, #ffffff 28%, #eaeaea 28%);
-    padding: 45px 0 83px;
+    padding: 45px 0 75px;
   }
 }
 
@@ -26,8 +26,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 0 450px 205px 573px 0;
-    grid-template-rows: min-content 166px 213px;
+    grid-template-columns: 450px 205px 573px;
+    grid-template-rows: min-content min-content min-content;
   }
 }
 
@@ -43,8 +43,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin-bottom: 75px;
   }
 }
 
@@ -63,8 +64,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding-top: 71px;
-    padding-bottom: 80px;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
@@ -92,7 +92,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 70px 60px;
+  grid-template-rows: min-content min-content;
   column-gap: 31px;
 
   @media (min-width: $tablet-width) {
@@ -104,11 +104,11 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: -2 / -1;
     grid-template-columns: min-content min-content;
     grid-template-rows: min-content auto;
-    gap: 50px 42px;
+    gap: 54px 42px;
     padding-top: 70px;
   }
 }
@@ -118,7 +118,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 124px;
-  grid-template-rows: 46px 12px 12px;
+  grid-template-rows: min-content 12px 12px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 162px;
@@ -132,7 +132,7 @@
   border: 1px solid var(--example-border, #ff6347);
   border-radius: 5px;
   margin: 0;
-  padding: 14px;
+  padding: 14px 14px 18px;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
   text-align: center;
@@ -141,7 +141,7 @@
   @media (min-width: $tablet-width) {
     @include secondary-font (30px, 37px); // $font-size, $line-height
     border-radius: 5px;
-    padding: 15px 0 19px;
+    padding: 15px 0 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -305,12 +305,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    // margin: 0 auto;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: -3 / -2;
+    grid-column: -2 / -1;
     grid-row: 1 / -1;
   }
 }
