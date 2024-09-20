@@ -21,7 +21,7 @@
 
 .programs__list {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -29,7 +29,6 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
     row-gap: 30px;
   }
 

@@ -14,7 +14,6 @@
 .main-nav__toggle {
   border: none;
   padding: 0;
-  // grid-column: 3 / 4;
 
   &:is(:hover, :focus, :focus-visible) {
     opacity: 0.8;

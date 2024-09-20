@@ -10,8 +10,6 @@
 }
 
 .features__wrapper {
-  // width: calc($mobile-width - 40px);
-  // margin: 0 auto;
   padding: 0;
 }
 
@@ -108,7 +106,6 @@
 .features__leaf {
   --icon: url("../../icons/icon-leaf.svg");
   --size: 31px 30px;
-  // --height: 17px;
 }
 
 .features__powder {
@@ -151,8 +148,6 @@
     color: var(--text-description, #ff6347);
     z-index: 1;
     padding-top: 30px;
-    // grid-column: 1 / -1;
-    // grid-row: 2 / 3;
   }
 
   @media (min-width: $mobile-width) {

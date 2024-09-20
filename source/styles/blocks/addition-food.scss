@@ -6,7 +6,6 @@
   padding-left: 20px;
   padding-right: 20px;
 
-
   @media (min-width: $tablet-width) {
     display: block;
     margin: 0 30px;
@@ -174,7 +173,6 @@
     grid-area: info;
     grid-template-areas: "count price";
     grid-template-columns: 1fr minmax(42px, auto);
-    // margin-top: 3px;
   }
 }
 
